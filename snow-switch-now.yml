@@ -1,7 +1,7 @@
 plugin: servicenow.servicenow.now
 table: cmdb_ci_ip_switch
-fields: [name,ip_address,manufacturer,host_name]
+fields: [name,ip_address,device_type,host_name]
 keyed_groups:
-  - key: sn_manufacturer | lower
+  - key: sn_device_type | lower
     prefix: ''
     separator: ''
